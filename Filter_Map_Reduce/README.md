@@ -2,6 +2,6 @@
 
 ## Aulas de Filter, Map, Reduce
 
-## Tentativas de aprimoramento de outros apps ja feitos
+#Foi escrito os códigos das funções sem utilizá-las.
 
-Recriar o app ToDo usando uma das tres funcionalidades.
+Visualize o código e veja!!
