@@ -9,7 +9,7 @@ const transformArr = (nome, cotacao) => {
     return {nome, cotacao}
 }
 
-const valor = []
+let valor = []
 
 const showData = (element) => {
 
@@ -35,11 +35,13 @@ const showData = (element) => {
     } else {
         resultado(2)
     }
+
 }
 
 btn.addEventListener('click', () => {
 
-    getAPI("https://economia.awesomeapi.com.br/last/USD-BRL,EUR-BRL,BTC-BRL").then(console.log).catch(console.error)
+    getAPI("https://economia.awesomeapi.com.br/last/USD-BRL,EUR-BRL,BTC-BRL"
+    ).then(console.log).catch(console.error)
 
 })
 
@@ -51,6 +53,10 @@ const getAPI = (url) => {
             })
             .then((data) => {
                 showData(data)
+            })
+            .then(() => {
+                valor = []
+
             })
             .catch(reject)
     }
